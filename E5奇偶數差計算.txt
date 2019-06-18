@@ -1,0 +1,26 @@
+
+package e5案计畉璸衡;
+
+import java.util.Scanner;
+public class E5案计畉璸衡 
+{
+    public static void main(String[] args)
+    {
+    Scanner a=new Scanner(System.in);
+    String b;
+    int c=0,d=0;
+    System.out.println("叫块计:");
+    b=a.nextLine();
+    for(int x=0;x<b.length();x++)
+       {
+       if(x%2==0)
+       c=c+(int)b.charAt(x);
+       else
+       d=d+(int)b.charAt(x);
+       }
+    if((d-c)%11==0)
+    System.out.print(b+"ぇ案计畉11计");
+    else
+    System.out.print(b+"ぇ案计畉ぃ琌11计");    
+    }
+}

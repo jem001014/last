@@ -1,0 +1,30 @@
+
+package e8排序;
+import java.util.Scanner;
+public class E8排序 
+{
+    public static void main(String[] args) 
+    {
+    Scanner a=new Scanner(System.in);
+    System.out.println("請輸入數字個數(30個以內)");
+    int b=a.nextInt();
+    while(b<1||b>30)
+    {System.out.println("請重新輸入數字個數(30個以內)");
+     b=a.nextInt();}
+    int c[]=new int[b];
+    System.out.println("輸入數字,並用空格分開:");
+    for(int x=0;x<b;x++)
+       c[x]=a.nextInt();
+    for(int x=0;x<b;x++)
+    {
+    for(int y=0;y<b-1;y++)
+    {  if(c[y]>c[y+1])
+          { int d=c[y];
+            c[y]=c[y+1];
+            c[y+1]=d;   }
+    }
+    }
+    for(int x=0;x<b;x++)
+    System.out.print(c[x]+" ");
+    }    
+}

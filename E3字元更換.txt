@@ -1,0 +1,26 @@
+
+package e3字元更換;
+
+import java.util.Scanner;
+public class E3字元更換 
+{
+    public static void main(String[] args)
+    {
+    Scanner a=new Scanner(System.in);
+    System.out.println("輸入一字串");
+    String b=a.next();
+    System.out.println("輸入第幾個字元及要替換成的字元");
+    int c=a.nextInt();//第幾個字
+    String d=a.next();//要替換成的
+    
+    String e="";
+    for(int x=0;x<b.length();x++)
+    {
+        if(x==c-1)
+        e=e+d.charAt(0);
+        else
+        e=e+b.charAt(x);
+    }
+    System.out.println(e);
+    }   
+}

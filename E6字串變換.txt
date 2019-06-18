@@ -1,0 +1,27 @@
+package e6字串變換;
+//97(小寫a)==65(大寫A)
+//48~57=0~9
+import java.util.*;
+public class E6字串變換 
+{
+    public static void main(String[] args)
+    {
+    Scanner a=new Scanner(System.in);
+    System.out.println("請輸入英文字串:");
+    String b=a.next();
+    String c="";
+    int y=0;
+    
+    for(int i=0;i<b.length();i++){
+        y=(int)b.charAt(i);
+        if(y>=97)
+        {y=y-32;
+         c=c+(char)y;}
+        else if(y>=65&&y<97)
+         c=c+(char)y;
+        else
+         c=c+"0";  
+        }    
+    System.out.print(c);
+    }
+}

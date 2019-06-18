@@ -1,0 +1,28 @@
+
+package e7陣列計算;
+
+import java.util.Scanner;
+public class E7陣列計算
+{
+    public static void main(String[] args) 
+    {
+    Scanner a=new Scanner(System.in);
+    int arr1[]=new int[6],arr2[]=new int[6],b;
+    System.out.println(輸入第一組6個的陣列);
+    for(int c=0;carr1.length;c++)
+    {   b=a.nextInt();
+        arr1[c]=b;
+    }
+    System.out.println(輸入第二組6個的陣列);
+    for(int c=0;carr2.length;c++)
+    {   b=a.nextInt();
+        arr2[c]=b;
+    }
+    for(int c=0;carr1.length;c++)
+    {   if((arr1[c]+arr2[c])%2==0)
+            System.out.print(0+ );
+        else
+            System.out.print(1+ );
+    }    
+    }    
+}

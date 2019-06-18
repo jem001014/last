@@ -1,0 +1,25 @@
+
+package e4小寫顯示;//97(小寫a)==65(大寫A)
+
+import java.util.Scanner;
+public class E4小寫顯示 
+{
+    public static void main(String[] args)
+    {
+    Scanner a=new Scanner(System.in);
+    System.out.println("輸入英文字串:");
+    String b=a.next();
+    String c="";
+    int y=0;
+    for(int i=0;i<b.length();i++){
+        y=(int)b.charAt(i);
+        if(y<97)
+        {
+        y=y+32;
+        c=c+(char)y;
+        }
+        else
+        c=c+(char)y;}
+    System.out.print(c);
+    }
+}
